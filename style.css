@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    --white: #fff;
+    --primary: #dd1e2b;
+    --secondary: #e9c97e;
+    --grayscale-ligth: #eee;
+    --grayscale-medium: #888;
+    --grayscale-dark: #222;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px 0 rgba(115, 115, 155, 1);
+}
+
+header img{
+    display: block;
+    width: 200px;
+    height: auto;
+}
+
+header a img{
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 20px;
+}
+
+header a:hover img{
+    box-shadow: 0 0 20px rgba(247, 164, 9, 0.927);
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+header nav ul li a{
+    color:  var(--grayscale-dark);
+    font-weight:  700;
+    font-size: 25px;
+}
+
+header nav ul li a:hover{
+    color: var(--primary);
+}
+
+#link-home, #link-sobre, #link-cadastro, #link-login{
+    color: var(--primary);
+}
+
+#main-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+}
+
+#main-home #home-content{
+    text-align: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#main-home #home-content h1{
+    text-align: center;
+    font-size: 38px;
+
+}
+
+#main-home .videos{
+    display: flex;
+    gap: 40px;
+}
+
+#main-home video{
+    border-radius: 15px;
+}
+
+#main-home .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#main-home .buttons a{
+    display: block;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: var(--white);
+    background-color: var(--primary);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#main-home .buttons a:hover{
+    box-shadow: 0 0 15px rgba(247, 164, 9, 0.927);
+}
+
+#main-sobre{
+    text-align: center;
+}
+
+#main-sobre h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#main-sobre .sobre-content{
+    padding: 0 17%;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+#main-sobre .map{
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+#main-cadastro, #main-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+}
+
+#main-cadastro .form-content{
+    max-width: 500px;
+    text-align: center;
+}
+
+#main-cadastro form{
+    display: flex;
+    flex-direction: column;
+}
+
+#main-cadastro .form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    background-color: var(--secondary);
+    border-radius: 15px;
+    padding: 80px 50px 50px;
+    box-shadow: 2px 5px 20px 0 var(--grayscale-medium);
+}
+
+#main-cadastro #form-cadastro input{
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+    border-bottom: 1px var(--grayscale-dark) solid;
+    color: var(--grayscale-dark);
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+#main-cadastro #form-cadastro input::placeholder{
+    font-size: 18px;
+    color: var(--grayscale-dark);
+}
+
+#main-cadastro #form-cadastro .terms{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#main-cadastro #form-cadastro .terms .terms-warning{
+    color: var(--primary);
+    display: none;
+}
+
+#main-cadastro #form-cadastro .terms #terms{
+    margin-bottom: 0px;
+}
+
+#main-cadastro #form-cadastro .buttons button{
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 15px;
+    padding: 10px 15px;
+    border: none;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#main-cadastro #form-cadastro .buttons button:hover{
+    box-shadow: 0 0 15px var(--white);
+}
+
+#main-login .form-content{
+    max-width: 500px;
+    text-align: center;
+}
+
+#main-login form{
+    display: flex;
+    flex-direction: column;
+}
+
+#main-login .form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    background-color: var(--secondary);
+    border-radius: 15px;
+    padding: 80px 50px 50px;
+    box-shadow: 2px 5px 20px 0 var(--grayscale-medium);
+}
+
+#main-login #form-cadastro input{
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+    border-bottom: 1px var(--grayscale-dark) solid;
+    color: var(--grayscale-dark);
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+#main-login #form-cadastro input::placeholder{
+    font-size: 18px;
+    color: var(--grayscale-dark);
+}
+
+#main-login #form-cadastro .terms{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#main-login #form-cadastro .terms .terms-warning{
+    color: var(--primary);
+    display: none;
+}
+
+#main-login #form-cadastro .terms #terms{
+    margin-bottom: 0px;
+}
+
+#main-login #form-cadastro .buttons button{
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 15px;
+    padding: 10px 15px;
+    border: none;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#main-login #form-cadastro .buttons button:hover{
+    box-shadow: 0 0 15px var(--white);
+}

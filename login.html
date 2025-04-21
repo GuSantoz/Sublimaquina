@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="home.html">
+            <img src="assets/image.jpg" alt=""> <!--O que esse alt faz?-->
+        </a>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="login.html" id="link-login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-login">
+        <div class="form-container">
+            <section class="form-content">
+                <h1>Preencha seus dados para acessar</h1>
+            </section>
+            <section class="form-area">
+                <form id="form-cadastro">
+                    <input type="email" placeholder="email@email.com" id="email">
+                    <input type="password" placeholder="Senha" id="password">
+                    <span class="terms-warning">*senha ou email incorretos!</span>
+                    <div class="buttons">
+                        <button type="button" class="register" onclick="login()">Entrar</button>
+                        <button type="button" class="clear" onclick="recuperarSenha()">Esqueceu a senha?</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
