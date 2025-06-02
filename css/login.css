@@ -45,7 +45,7 @@
 
 #main-login .office-image {
   flex: 1;
-  background-image: url("assets/background.jpg");
+  background-image: url("../assets/background.jpg");
   background-size: cover;
 }
 
