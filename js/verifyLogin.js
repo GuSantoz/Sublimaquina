@@ -1,4 +1,0 @@
-const verifyLogin = () => {
-  alert("ola");
-};
-
