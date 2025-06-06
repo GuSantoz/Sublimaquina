@@ -96,8 +96,6 @@ const adicionarEndereco = async () => {
   console.log(data);
 };
 
-// ...existing code...
-
 async function salvarOuAtualizarEndereco() {
   const form = document.getElementById("formEndereco");
   const cep = form.elements["cep"].value;
@@ -121,8 +119,6 @@ async function salvarOuAtualizarEndereco() {
     renderAddresses();
   }
 }
-
-// ...existing code...
 
 function clearForm() {
   document.getElementById("formEndereco").reset();

@@ -1,9 +1,6 @@
 const userLogin = async () => {
-  // let login = document.getElementById("login").value
-  // let password = document.getElementById("password-login").value
-
-  let login = "franca.jv@hotmail.com";
-  let password = "Kiko@123";
+  let login = document.getElementById("login").value
+  let password = document.getElementById("password-login").value
 
   let url = "https://go-wash-api.onrender.com/api/login";
 
@@ -28,7 +25,8 @@ const userLogin = async () => {
       );
     }
 
-    let { access_token } = await api.json();
+    let token = await api.json();
+    access_token = token.acc
     localStorage.setItem("user_token", access_token);
 
     window.location.href = "dashboard.html";
